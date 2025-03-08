@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Food Database</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1 { color: #4CAF50; }
+    code { background-color: #f5f5f5; padding: 2px 5px; border-radius: 3px; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+  </style>
+</head>
+<body>
+  <h1>Indian Food Database API</h1>
+  <p>This is a simple API for Indian food nutritional data from IFCT 2017.</p>
+  
+  <h2>Endpoints:</h2>
+  <ul>
+    <li><code>/search-index.json</code> - Search index with basic food information</li>
+    <li><code>/all-foods.json</code> - Complete database with all food items</li>
+    <li><code>/foods/{id}.json</code> - Individual food details by ID</li>
+  </ul>
+  
+  <h2>Sample Data:</h2>
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Unique identifier for the food item (based on food name)</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Name of the food item</td>
+    </tr>
+    <tr>
+      <td>caloriesPer100g</td>
+      <td>Energy in kcal per 100g</td>
+    </tr>
+    <tr>
+      <td>proteinPer100g</td>
+      <td>Protein content in grams per 100g</td>
+    </tr>
+    <tr>
+      <td>carbsPer100g</td>
+      <td>Carbohydrate content in grams per 100g</td>
+    </tr>
+    <tr>
+      <td>fatPer100g</td>
+      <td>Fat content in grams per 100g</td>
+    </tr>
+  </table>
+  
+  <p>Total foods in database: 1014</p>
+  <p>Data source: IFCT 2017 (Indian Food Composition Tables)</p>
+  <p><small>Last updated: 2025-03-08</small></p>
+</body>
+</html>
